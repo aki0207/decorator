@@ -12,5 +12,15 @@ public class Main {
 		d3.show();
 		d4.show();
 		d5.show();
+
+		MultiStringDisplay md = new MultiStringDisplay();
+		md.add("おはようございます。");
+		md.add("こんにちは。");
+		md.add("こんばんは。");
+		Display d6 = md;
+		Display d7 = new SideBorder(d6, '#');
+		d6.show();
+		d7.show();
+
 	}
 }
